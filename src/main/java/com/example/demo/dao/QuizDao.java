@@ -11,6 +11,10 @@ public interface QuizDao {
 
 	List<Quiz> getQuizByID(int id)throws DBExceptions;
 
-	String createQuiz(Quiz quiz)throws DBExceptions;
+	Quiz createQuiz(Quiz quiz)throws DBExceptions;
+
+	int DeleteAllQuizzes();
+
+	int deleteById(int qid);
 
 }
